@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    
+    <style>
+        h1, label, input, button {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        main {
+            padding: 50px 250px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, button {
+            font-size: 30px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        div#chat {
+            border: 2px solid gray;
+            padding: 25px;
+            margin-bottom: 50px;
+        }
+
+        p.message {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Bem vindo ao chat NodeJS</h1>
+
+        <div id="chat">
+            <p class="message"><strong>Username</strong> Mensagem 11/10 16:00</p>
+        </div>
+
+        <form>
+            <label for="input-message">
+                Escreva a sua mensagem
+                <input id="input-message" type="text" placeholder="Mensagem...">
+            </label>
+
+            <button>Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
