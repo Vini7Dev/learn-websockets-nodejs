@@ -7,13 +7,18 @@
     <title>Chat</title>
     
     <style>
-        h1, label, input, button {
+        h1, h2, label, input, button {
             font-family: Arial, Helvetica, sans-serif;
         }
 
         h1 {
             text-align: center;
             font-size: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
         }
 
         main {
@@ -51,10 +56,12 @@
 </head>
 <body>
     <main>
-        <h1>Bem vindo ao chat NodeJS</h1>
+        <h1>Olá, <span id="username"></span>!</h1>
+        <h2>Bem vindo(a) ao chat <span id="room"></span></h2>
+
+        <button id="logout-button">Logout</button>
 
         <div id="chat">
-            <p class="message"><strong>Username</strong> Mensagem 11/10 16:00</p>
         </div>
 
         <form>
@@ -62,9 +69,9 @@
                 Escreva a sua mensagem
                 <input id="input-message" type="text" placeholder="Mensagem...">
             </label>
-
-            <button>Enviar</button>
         </form>
     </main>
 </body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="chat.js"></script>
 </html>

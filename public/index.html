@@ -42,20 +42,20 @@
     <main>
         <h1>Chat com WebSockets</h1>
         <form action="chat.html">
-            <label for="chat">
+            <label for="room">
                 Selecione o chat que deseja entrar
-                <select id="chat" id="chats-options">
-                    <option value="javascript">JavaScript</option>
-                    <option value="python">Python</option>
-                    <option value="java">Java</option>
-                    <option value="elixir">Elixir</option>
-                    <option value="ruby">Ruby</option>
+                <select id="room" name="room" id="chats-options">
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="Elixir">Elixir</option>
+                    <option value="Ruby">Ruby</option>
                 </select>
             </label>
 
             <label for="username">
                 Informe o seu username
-                <input type="text" id="username" placeholder="Username">
+                <input type="text" name="username" id="username" placeholder="Username">
             </label>
             
             <button type="submit">Entrar</button>
